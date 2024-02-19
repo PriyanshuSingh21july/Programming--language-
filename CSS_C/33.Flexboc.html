@@ -1,0 +1,182 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+
+       <style>
+              .container {
+                     display: flex;
+                     flex-direction: row-reverse;
+                     justify-content: flex-start;
+                     background-color: aquamarine;
+                     height: 50vh;
+                     align-items: center;
+              }
+
+
+              .box1 {
+
+                     height: 234px;
+                     width: 345px;
+                     background-color: gray;
+                     float: right;
+                     border: 3px solid black;
+              }
+
+              .box2 {
+                     height: 234px;
+                     width: 345px;
+                     background-color: aqua;
+                     float: right;
+                     border: 3px solid black;
+
+
+
+              }
+       </style>
+</head>
+
+<body>
+       <div class="container">
+
+
+
+
+              <div class="box1">Box1</div>
+
+              <div class="box2">Box2</div>
+              <div class="box2">Box2b</div>
+              <div class="box2">Box2c</div>
+
+       </div>
+</body>
+
+</html>
+
+-->
+
+<!--    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+
+       <style>
+              .conatainer{
+                     display: flex;
+                     border: 2px solid red;
+                     height: 20vh;
+                     align-items: flex-start;
+                     justify-content: flex-start; /* change item left right */
+                   /*  flex-direction: column;  */
+
+              }
+              .iteam
+              {
+                     height: 90px;
+                     width: 90px;
+                     background-color: blueviolet;
+                     margin: 4px;
+              }
+       </style>
+</head>
+<body>
+       <main>
+       <div class="conatainer">
+              <div class="iteam"></div>
+              <div class="iteam"></div>
+              <div class="iteam"></div>
+              <div class="iteam"></div>
+              <div class="iteam"></div>
+              <div class="iteam"></div>
+              <div class="iteam"></div>
+              <div class="iteam"></div>
+       </div>
+</main>
+</body>
+</html>
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+            /* justify-content: center; */
+            align-items: center;
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+            /* align-content: flex-start; */
+            /* there is no justify-items  in flexbox; */
+            flex-flow: row wrap;
+            /* gap: 30px; 
+            row-gap: 40px;
+            column-gap: 10px; */
+            gap: 40px 10px;
+
+        }
+
+        .item {  
+            /* flex-grow: 1; */
+            height: 92px;
+            width: 92px;
+            border: 2px solid black;
+            /* margin: 4px; */
+            background-color: blueviolet;
+        }
+
+        .order-1{
+            order: 1;
+        }
+        .order-2{
+            order: 2;
+        }
+        .order-3{
+            order: 3;
+        }
+
+        .item1{  
+            /* flex-grow: 2; */
+            /* flex-shrink: 2; */
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="item item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item order-1">4</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            
+         
+        </div>
+    </main>
+
+</body>
+
+</html>
