@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+               <meta charset="UTF-8">
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               <title>Document</title>
+
+               <script>
+class animal{
+               constructor(name)
+               {
+                              this.name=name;
+               }
+               fly()
+               {
+                              document.write("I am flying")
+               }
+               get name()
+               {
+                              return this._name
+               }
+               set name(newname)
+               {
+                              return this._name=newname
+
+               }
+                 
+}
+
+let a=new animal("Bruno")
+a.fly();
+document.write(a.name)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               </script>
+</head>
+<body>
+               
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+               <meta charset="UTF-8">
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               <title>Document</title>
+
+<script>
+
+class RailwayFrom{
+               summit()
+               {
+                              alert(this.name+": your from Submitted ");
+               }
+               cancle()
+               {
+                              alert(this.name+" yuor from cancelled ");
+               }
+               fill(givename,trainnu)
+               {
+                              this.name=givename;
+                              //this.name=trainnu;
+               }
+}
+
+let priyanshu=new RailwayFrom()
+priyanshu.fill("Priyanshu")
+let vivek=new RailwayFrom()
+vivek.fill("Vivek")
+
+priyanshu.summit()
+vivek.summit()
+vivek.cancle()
+
+</script>
+</head>
+<body>
+               
+</body>
+</html>

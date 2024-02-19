@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+               <meta charset="UTF-8">
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               <title>Document</title>
+
+<script>
+               class employee
+               {
+                              login()
+                              {
+                                          document.write("Employee is login :"+"<br>")
+                              }
+
+                              logout()
+                              {
+                                             document.write("Employee is logout :"+"<br>")
+                              }
+
+                              Requestleave(leaves)
+                              {
+                                             document.write("Employee has requested leaves"+"<br>")
+                              }
+               }
+
+               class programmer extends employee
+               {
+                              requstcoffe()
+                              {
+                                             document.writeg("Employee has request  coffe"+"<br>")
+                              }
+               }
+
+
+               let e=new employee()
+               e.login()
+               e.logout()
+
+               let b=new programmer();
+               b.login();
+               b.logout();
+               b.requstcoffe();
+
+
+
+
+
+
+
+</script>
+</head>
+<body>
+               
+</body>
+</html>
