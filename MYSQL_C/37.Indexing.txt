@@ -1,0 +1,9 @@
+37.Indexing
+
+/* Search any data before indexing */
+
+CREATE CLUSTERED INDEX idx_clustered
+ON Empdatas(emp_id);
+select * from  Empdatas where emp_id=6;
+
+/* Its reduce searching time*/

@@ -1,0 +1,41 @@
+28.Logical Operator
+/*  1. And */
+select * from employe_data where Gender="M" and Salary>60000;
+select * from employe_data where Gender="M" and Salary>60000 and DepartmentID=1;
+
+
+/* 2.Or */
+select * from employe_data where Gender="M" or Salary>60000 or DepartmentID=1;
+select * from employe_data where Gender="M" or Salary>60000 
+select * from employe_data where Gender="M" or Salary>60000  and DepartmentID=1;
+
+/* 3.Between */
+select *  from employe_data where Salary between 50000 And 60000;
+
+/*4.EXITS  */
+select * from  employe_data
+if exists(select * from employe_data where Salary=60000)
+print 'yes'
+else
+print 'no'
+
+/* 5. Like */
+*Acess name satrt with j/any alphabrtic number
+select * from  employe_data where FirstName Like "j%";
+select * from  employe_data where FirstName Like "ja%";
+
+*Acess end with j/any alphabrtic number
+select * from  employe_data where FirstName Like "%e"; 
+select * from  employe_data where FirstName Like "%ne";
+
+*Acess start and end with data at any position
+select * from  employe_data where FirstName Like "%j%";
+
+*Acess element which has 4 length
+select * from  employe_data where FirstName Like "____";
+select * from  employe_data where FirstName Like "J____";
+
+*Acess using list
+
+6.Exists
+select * from  employe_data where  exists(select   EmployeeID from    employe_data where Salary>60000);

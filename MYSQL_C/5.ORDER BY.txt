@@ -1,0 +1,22 @@
+/* 1. ORDER BY
+SELECT * FROM Customers
+ORDER BY last_name;
+ */
+
+/* 2.   ORDER BY DESC              
+
+SELECT * FROM Customers
+ORDER BY   last_name DESC ;
+
+ */
+ 
+ /*  3.ORDER BY ASC  
+ SELECT * FROM Customers
+ ORDER BY age ASC;
+  */
+  
+  /*  4.ODER BY ASC AND DESC                 
+  SELECT * FROM Customers
+  ORDER BY age Asc , customer_id DESC;
+  
+   */

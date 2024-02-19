@@ -1,0 +1,7 @@
+34.Cross jion
+
+
+-- CROSS JOIN: Select all combinations of rows from Table1 and Table2
+SELECT Table1.Column1, Table1.Column2, Table2.Column3, Table2.Column4
+FROM Table1
+CROSS JOIN Table2;

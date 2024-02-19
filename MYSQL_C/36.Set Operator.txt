@@ -1,0 +1,72 @@
+36.Set Operator
+
+1.Union
+
+
+ 
+  /* Table 1*/  
+    CREATE TABLE Employee (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255),
+    phoneno VARCHAR(15),
+    city VARCHAR(255),
+    occupation VARCHAR(255),
+    salary DECIMAL(10, 2)
+);
+drop table   Employee;
+    
+    INSERT INTO  Employee(id,name, phoneno, city, occupation, salary) VALUES
+(1,'John Doe', '123-456-7890', 'New York', 'Software Engineer', 80000.00),
+(2,'Bob Johnson', '555-123-4567', 'Chicago', 'Sales Representative', 75000.75),
+(3,'Alice Williams', '222-333-4444', 'San Francisco', 'Marketing Specialist', 70000.25),
+(4,'Charlie Brown', '777-888-9999', 'Houston', 'Financial Analyst', 85000.00),
+(5,'Eva Davis', '111-222-3333', 'Miami', 'HR Manager', 95000.00),
+(6,'David Lee', '444-555-6666', 'Seattle', 'Graphic Designer', 70000.50);
+
+/*  table 2 */  
+    CREATE TABLE Empdatas (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255),
+    phoneno VARCHAR(15),
+    city VARCHAR(255),
+    occupation VARCHAR(255),
+    salary DECIMAL(10, 2)
+);
+
+    
+INSERT INTO   Empdatas(id,name, phoneno, city, occupation, salary) VALUES
+(1,'John Doe', '123-456-7890', 'New York', 'Engineer', 80000.00),
+(2,'Johnson', '555-123-456767', 'persih', 'Sales Representative', 75000.75),
+(3,'Alice Williams', '222-333-4444', ' Francisco', 'Marketing Specialist', 70000.25),
+(4,' Brown', '777-888-999967', 'Houston', 'Financial ', 85000.00),
+(5,'Eva Davis', '111-222-3333843', 'Landon', 'HR ', 95000.00),
+(6,'Lee', '444-555-6666', 'Seattle', 'Graphic Designer', 70000.50);
+
+/* 1. union query (remove duplicate )*/
+select id,name, phoneno, city, occupation, salary from   Empdatas
+union
+select id,name, phoneno, city, occupation, salary from   Empdatas;
+
+/*  2.Union all   (not remove duplicate )*/
+select id,name, phoneno, city, occupation, salary from   Empdatas
+union all
+select id,name, phoneno, city, occupation, salary from   Empdatas;
+
+/* 3.Insersection  (Just acess duplicate both of table) */
+select id,name, phoneno, city, occupation, salary from   Empdatas
+INSERSECT
+select emp_id,emp_name, emp_phoneno, emp_city, emp_occupation, emp_salary from   Empdatas
+
+4.
+
+select id,name, phoneno, city, occupation, salary from   Empdatas
+except
+select emp_id,emp_name, emp_phoneno, emp_city, emp_occupation, emp_salary from   Empdatas;
+
+
+
+
+********************************************************************************************************************************************************************************************
+
+
+

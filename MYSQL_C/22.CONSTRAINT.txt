@@ -1,0 +1,28 @@
+
+create table vivek(
+ID INT unique,
+name varchar(28),
+age int
+
+);
+
+unique : we can't insert  duplicate vaue of id beacuase its unique
+
+
+create table vivek(
+ID INT NOT NULL,
+name varchar(28),
+age int
+
+);
+
+NOT NULL: we can't  kept empty id nll bacause consytarint is not null
+
+
+create table vivek(
+ID INT,
+name varchar(28),
+age int not null check(age<=18),
+
+primary key(id)
+);

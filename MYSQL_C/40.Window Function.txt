@@ -1,0 +1,8 @@
+40.Window Function
+
+select  sum(Salary) over() as "Total-Amount"  from employe_data;
+
+select  FirstName,City,HireDate,sum(Salary) over() as "Total-Amount"  from employe_data;
+
+
+select  FirstName,City,HireDate,DepartmentID,sum(Salary) over(partition by "DepartmentID")  as "Total-Amount"  from employe_data;  /*   partition  */

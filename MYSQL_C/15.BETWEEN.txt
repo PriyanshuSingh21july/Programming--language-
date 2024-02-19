@@ -1,0 +1,13 @@
+
+/*     BETWEEN operation       */
+select * from Orders
+where amount	 between 200 And 400; 
+
+/*  not   BETWEEN operation       */
+select * from Orders
+where amount not between  200 And 400; 
+
+/*     BETWEEN with IN  */
+select * from Customers
+where customer_id between 1 and 4
+and age in(22,25);

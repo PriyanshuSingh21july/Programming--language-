@@ -1,0 +1,81 @@
+38.Group by
+
+
+
+Create table employe_data
+(
+EmployeeID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    DateOfBirth DATE,
+    Gender CHAR(1),
+    HireDate DATE,
+    Salary DECIMAL(10, 2),
+    DepartmentID INT,
+    Email VARCHAR(100),
+    PhoneNumber VARCHAR(20),
+    AddressLine1 VARCHAR(255),
+    AddressLine2 VARCHAR(255),
+    City VARCHAR(50),
+    State VARCHAR(50),
+    ZipCode VARCHAR(10),
+    Country VARCHAR(50)
+    
+);
+
+
+    INSERT INTO employe_data (
+    EmployeeID, 
+    FirstName, 
+    LastName, 
+    DateOfBirth, 
+    Gender, 
+    HireDate, 
+    Salary, 
+    DepartmentID, 
+    Email, 
+    PhoneNumber, 
+    AddressLine1, 
+    AddressLine2, 
+    City, 
+    State, 
+    ZipCode, 
+    Country
+) VALUES 
+    (1, 'John', 'Doe', '1990-05-15', 'M', '2022-01-01', 60000.00, 1, 'john.doe@email.com', '123-456-7890', '123 Main St', 'Apt 45', 'Cityville', 'Stateville', '12345', 'Countryland'),
+    (2, 'Jane', 'Smith', '1988-08-22', 'F', '2022-02-15', 55000.00, 2, 'jane.smith@email.com', '987-654-3210', '456 Oak St', 'Suite 12', 'Townsville', 'Stateville', '54321', 'Countryland'),
+    (3, 'Alice', 'Johnson', '1995-12-05', 'F', '2022-03-20', 62000.00, 1, 'alice.johnson@email.com', '555-123-4567', '789 Maple St', 'Apt 7', 'Villageville', 'Stateland', '67890', 'Countryland'),
+    (4, 'Bob', 'Williams', '1992-04-30', 'M', '2022-04-10', 58000.00, 3, 'bob.williams@email.com', '111-222-3333', '101 Pineapple St', 'Suite 3', 'Hamletville', 'Stateland', '98765', 'Countryland'),
+    (5, 'Eva', 'Brown', '1991-07-18', 'F', '2022-05-15', 65000.00, 2, 'eva.brown@email.com', '999-888-7777', '246 Cherry St', 'Apt 22', 'Citytown', 'Stateville', '13579', 'Countryland'),
+    (6, 'David', 'Miller', '1989-10-25', 'M', '2022-06-01', 70000.00, 1, 'david.miller@email.com', '444-555-6666', '369 Walnut St', 'Suite 15', 'Suburbville', 'Stateland', '24680', 'Countryland'),
+    (7, 'Sophie', 'Clark', '1994-02-08', 'F', '2022-07-10', 60000.00, 3, 'sophie.clark@email.com', '777-888-9999', '753 Pine St', 'Apt 30', 'Townville', 'Stateland', '56789', 'Countryland');
+
+
+select * from  employe_data;
+
+********************************************************************************************************************************************************************************************
+1.Sum
+select sum(Salary) from  employe_data group by DepartmentID;
+select  DepartmentID,sum(Salary) from  employe_data group by DepartmentID;
+
+2.AVG
+select  DepartmentID,AVG(Salary) from  employe_data group by DepartmentID;
+
+3.Min
+select  DepartmentID,min(Salary) from  employe_data group by DepartmentID;
+
+
+4.Max
+select  DepartmentID,max(Salary) from  employe_data group by DepartmentID;
+
+5.count
+select  count(DepartmentID) from  employe_data group by DepartmentID;
+
+6.Combine apply
+
+select  max(Salary),min(Salary),avg(Salary) ,sum(Salary) from  employe_data group by DepartmentID;
+
+7.Having clause
+select  max(Salary),min(Salary),avg(Salary) ,sum(Salary) from  employe_data group by DepartmentID 
+having sum(Salary)>60000
+;

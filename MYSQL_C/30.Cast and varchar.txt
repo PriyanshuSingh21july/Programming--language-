@@ -1,0 +1,8 @@
+30.Cast and varchar
+
+cast
+/* change datatype of any entitiy*/
+select FirstName,LastName,Gender,CAST(DateOfBirth AS VARCHAR) from employe_data;
+
+convert
+select convert(varchar ,DateOfBirth) from employe_data;

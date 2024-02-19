@@ -1,0 +1,30 @@
+Merge operation
+
+
+
+create table source
+(
+P_id int,
+P_Name varchar(30),
+P_price int
+)
+select  * from source;
+insert into source(P_Id ,P_name,P_price) value(101,"Mouse",100);
+insert into source(P_Id ,P_name,P_price) value(102,"Pad",110);
+insert into source(P_Id ,P_name,P_price) value(103,"Cpu",250);
+insert into source(P_Id ,P_name,P_price) value(104,"Keyboad",300);
+
+
+create table Target
+(
+P_id int,
+P_Name varchar(30),
+P_price int
+)
+select  * from Target;
+insert into Target(P_Id ,P_name,P_price) value(101,"Mouse",100);
+insert into Target(P_Id ,P_name,P_price) value(102,"Pad",110);
+insert into Target(P_Id ,P_name,P_price) value(103,"Cpu",250);
+insert into Target(P_Id ,P_name,P_price) value(106,"Keyboad",300);
+
+

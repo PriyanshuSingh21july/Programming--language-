@@ -1,0 +1,28 @@
+29.String Function
+
+/* 1.Check Ascii value using sql */
+
+select ascii('a');
+select ascii('A');
+select ascii('t');
+select ascii('T')
+ 
+
+/* 2.character to ascii aplpha numeric  */
+SELECT CHAR(97);
+
+
+/* 3.Find character index */
+SELECT CHAR_LENGTH("Priyanshu");
+
+/* 4. Concat 2 sring*/
+select concat("Priya","anshu");
+select concat("Priya","anshu"," for space","Singh");
+
+/* 5.CONCAT_WS                    */
+select CONCAT_WS("_","Mysql","Databse","Backend");
+
+/* 6.Acess right/left chracter in   */
+
+select left("Priyanshu",5);
+select right("Priyanshu",5);

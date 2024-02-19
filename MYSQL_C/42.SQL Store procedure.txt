@@ -1,0 +1,15 @@
+42.SQL Store procedure
+
+
+CREATE PROCEDURE GetAverageMarks 
+AS
+BEGIN
+select * from   employe_data   where DepartmentID=1
+END 
+
+this way you can store query parmanenet in database 
+call for query not requried to write any code just call
+
+GetAverageMarks 
+execute 
+GetAverageMarks 

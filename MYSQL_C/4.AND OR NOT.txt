@@ -1,0 +1,14 @@
+ /* 1. AND OPERATION         
+SELECT * FROM Customers
+WHERE age>=18 AND age<=28;
+*/ 
+
+  /* 2.  OR OPERATION       
+SELECT * FROM Customers
+WHERE country="UK" OR country="UAE";
+*/  
+
+/* 3. NOT OPERATION */
+SELECT * FROM Customers
+WHERE NOT country="UAE";
+

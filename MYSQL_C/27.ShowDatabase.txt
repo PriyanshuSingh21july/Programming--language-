@@ -1,0 +1,3 @@
+// for show all database which you create
+
+show databases;

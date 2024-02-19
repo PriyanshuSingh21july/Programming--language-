@@ -1,0 +1,9 @@
+/*     IN operation       */
+select * from Customers
+where country in('USA','UAE');
+
+
+
+/*     not IN operation       */
+select * from Customers
+where country not in('USA','UAE');

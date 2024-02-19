@@ -1,0 +1,5 @@
+35.Data Inegrity
+.not null
+.unique key
+.primary key
+.Forign key

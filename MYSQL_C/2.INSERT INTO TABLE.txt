@@ -1,0 +1,18 @@
+INSERT INTO Customers(customer_id,first_name,last_name,age,country)
+VALUES(6,"priyanshu","Singh",20,"India"),
+(6,"priyanshu","Singh",20,"India"),
+(6,"priyanshu","Singh",20,"India")
+(6,"priyanshu","Singh",20,"India");
+
+
+or
+insert into student values(1,"Priyanshu",20);
+insert into student values(1,"Priyanshu",20);
+insert into student values(1,"Priyanshu",20);
+insert into student values(1,"Priyanshu",20);
+
+or
+
+insert into anu
+ ( Id,Name,Age,Rollno,email, city,Degination, Emdid) 
+ value(1,"Priyanshu",20,126,"priyanshu@2003","Bhopal","Developer",11);

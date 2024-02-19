@@ -1,0 +1,89 @@
+39.Sql Subquery
+
+type:
+1.Singlr row Subquery
+2.Mutiple row Subquery
+3.correlated Sub Query
+
+
+
+****************************************************************************************************************************************************************************************
+
+select * from  student where rollno=
+(select rollno from exam_scores where rollno=1  and city="New York");
+
+select * from  exam_scores where rollno=
+(select rollno from student where rollno=1  and city="New York");
+
+select * from  exam_scores where rollno in
+(select rollno from student where  city="New York");
+
+select * from  exam_scores where rollno =any
+(select rollno from student where  city="New York");
+suppoert use >= <=
+
+
+CREATE TABLE student (
+    rollno INT PRIMARY KEY,
+    name VARCHAR(255),
+    city VARCHAR(255)
+);
+INSERT INTO student (rollno, name, city) VALUES
+(1, 'John Doe', 'New York'),
+(2, 'Jane Smith', 'Los Angeles'),
+(3, 'Bob Johnson', 'Chicago'),
+(4, 'Alice Brown', 'Houston'),
+(5, 'Charlie Davis', 'San Francisco'),
+(6, 'Eva White', 'Miami'),
+(7, 'Frank Miller', 'Seattle');
+
+CREATE TABLE exam_scores (
+    rollno INT PRIMARY KEY,
+    science INT,
+    math INT,
+    english INT
+);
+INSERT INTO exam_scores (rollno, science, math, english) VALUES
+(1, 90, 85, 78),
+(2, 75, 92, 88),
+(3, 88, 85, 90),
+(4, 95, 80, 89),
+(5, 82, 94, 89),
+(6, 78, 85, 91),
+(7, 93, 89, 89);
+
+********************************************************************************************************************************************************************************************
+
+*Sub query
+
+/* 1. Main table   */
+CREATE TABLE exam_scores (
+    rollno INT PRIMARY KEY,
+    science INT,
+    math INT,
+    english INT
+);
+INSERT INTO exam_scores (rollno, science, math, english) VALUES
+(1, 90, 85, 78),
+(2, 75, 92, 88),
+(3, 88, 85, 90),
+(4, 95, 80, 89),
+(5, 82, 94, 89),
+(6, 78, 85, 91),
+(7, 93, 89, 89);
+select * from exam_scores ;
+
+/* 2.  Its backup table where we are copty all data of empty backup table */
+CREATE TABLE backup (
+    rollno INT PRIMARY KEY,
+    science INT,
+    math INT,
+    english INT
+);
+
+insert into backup(rollno,science,math,english)
+select rollno,science,math,english from  exam_scores;
+select * from backup;
+
+
+********************************************************************************************************************************************************************************************

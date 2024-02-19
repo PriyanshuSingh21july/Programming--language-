@@ -1,0 +1,2 @@
+select sum (amount) AS TOTAL_AMOUNT
+from Orders;
