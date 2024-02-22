@@ -1,0 +1,4 @@
+//Create database
+
+use student
+switched to db student

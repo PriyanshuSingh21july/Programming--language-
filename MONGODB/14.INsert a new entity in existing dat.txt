@@ -1,0 +1,25 @@
+//INsert a new entity in existing data
+
+{
+  "_id": {
+    "$oid": "65c8690d02683bada11dde03"
+  },
+  "Branch": "CSE",
+  "Cgpa": 9.5,
+  "Name": "Anu",
+  
+}
+
+
+
+db.data.updateOne({"Name":"Anu"},{$set:{"Age":21}});
+
+{
+  "_id": {
+    "$oid": "65c8690d02683bada11dde03"
+  },
+  "Branch": "CSE",
+  "Cgpa": 9.5,
+  "Name": "Anu",
+  "Age": 21
+}

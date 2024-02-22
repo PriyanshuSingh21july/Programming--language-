@@ -1,0 +1,12 @@
+//Delete databaseS
+
+db.dropDatabase()
+
+db.dropDatabase()
+
+
+// Delete any  whole document Details
+db.data.deleteOne({id:5})
+
+// Delete on Document record 
+db.data.deleteMany({Price:50})

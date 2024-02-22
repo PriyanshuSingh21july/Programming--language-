@@ -1,0 +1,19 @@
+//Remane
+
+db.data.updateOne({Age:23},{$rename:{"Name":"Fname"}})
+
+
+
+
+
+// delete
+
+db.data.updateOne({Age:23},{$unset:{Age:23}})
+
+
+Branch
+"CSE"
+Cgpa
+9.5
+Name
+"Anu"

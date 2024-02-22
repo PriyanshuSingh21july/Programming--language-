@@ -1,0 +1,15 @@
+// Update
+
+updateOne()
+db.courses.updateOne( { Name: "Vivek" }, { $set: { id: 2 } } ) 
+
+db.courses.updateOne( { Name: "Vivek" }, { $set: { Name: "Priyanshu" } } ) 
+
+db.courses.updateOne( { Name: "Krishna" }, { $set: { id: 3 } } ) 
+
+db.data.updateOne({"Name":"Anu"},{$set:{Age:23}})
+
+
+/*    Updatemany()  */
+
+db.data.updateMany({"Branch":"CSE"},{$set:{Cgpa:9.5}})

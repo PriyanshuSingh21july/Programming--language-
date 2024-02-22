@@ -1,0 +1,19 @@
+5.INSERT DATABASE
+
+
+db.data.insertOne({"Name":"Priyanshu",Age:20,"Branch":"CSE","Semester":"V",Cgpa:7.27})
+db.data.insertOne({"First Name":"Anurag",Age:17,"Branch":"CSE",Cgpa:7})
+db.courses.insertOne({id:1,"Name":"Vivek",Age:20})
+
+
+
+// insert many data
+db.data.insertMany
+([{"Name":"Ram",Age:27,"Branch":"Ex",Cgpa:7.6},
+{"Name":"Vivek",Age:19,"Branch":"CSE",Cgpa:7.9},
+{"Name":"Anu",Age:13,"Branch":"CSE",Cgpa:7}]);
+
+
+
+Syntax
+db.collection_name;

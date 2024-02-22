@@ -1,0 +1,5 @@
+// SHow data in database
+db.data.find()
+db.courses.find() --
+db.courses.findOne() --
+db.courses.find() --

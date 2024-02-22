@@ -1,0 +1,27 @@
+//Comments
+db.data.updateOne({id:1},{$push:{comments:{"Name":"Priyanshu",text:"3rd Year Student"}}})
+
+{
+  "_id": {
+    "$oid": "65c7b141dd37be393cd281b3"
+  },
+  "Name": "Priyanshu",
+  "Age": 20,
+  "Branch": "CSE",
+  "Semester": "V",
+  "Cgpa": 9.5,
+  "id": 1,
+  "comments": [
+    {
+      "Name": "Priyanshu",
+      "text": "3rd Year Student"
+    }
+  ]
+}
+
+
+
+
+// delete cooment
+
+db.data.updateOne({id:1},{$pop:{"comments" :1}})

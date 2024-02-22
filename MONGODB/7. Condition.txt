@@ -1,0 +1,19 @@
+// Condition
+db.courses.find({Age:{$gt:20}});
+
+{
+  _id: ObjectId('65c84f6602683bada11dddff'),
+  id: 2,
+  Name: 'Krishna',
+  Age: 21
+}
+
+
+
+db.courses.find({Age:{$lt:21}});
+{
+  _id: ObjectId('65c84cdf02683bada11dddfe'),
+  id: 1,
+  Name: 'Vivek',
+  Age: 20
+}
