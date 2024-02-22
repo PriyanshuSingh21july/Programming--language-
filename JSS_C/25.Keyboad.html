@@ -1,0 +1,30 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<title> keydown function in javascript </title>  
+<style>  
+#datas {  
+color: green;  
+}  
+</style>  
+</head>  
+<body>  
+<h2> JavaScript keydown Method </h2>  
+<div id = "demoDIV" >  
+The javascript key-down event works after pressing the key and key in the down position on the specific tag.  
+</div>  
+<input type = "text" id = "input_class" placeholder = "write here." onkeydown = "keyDownFunction()">  
+<p id = "datas"> </p>  
+<script>  
+
+
+function keyDownFunction() {  
+alert("JavaScript keyDown function activates successfully!!!");  
+document.getElementById("datas").innerHTML = "JavaScript keyDown function activates successfully!!!";  
+//https://www.w3schools.com/jsref/obj_keyboardevent.asp
+}  
+
+
+</script>  
+</body>  
+</html>  

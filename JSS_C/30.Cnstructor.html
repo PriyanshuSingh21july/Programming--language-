@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+               <meta charset="UTF-8">
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               <title>Document</title>
+
+<script>
+
+class RailwayFrom{
+
+               constructor(givename,trainnu)
+{
+               document.write("Constructor is called" )
+               console.log("Constructor is called :" + givename+" "+trainnu)
+               this.name=givename;
+            this.name=trainnu;
+}
+
+               summit()
+               {
+                              alert(this.name+": your from Submitted ");
+               }
+               cancle()
+               {
+                              alert(this.name+" yuor from cancelled ");
+               }
+              
+}
+
+let priyanshu=new RailwayFrom("Priyanshu",233565)
+let vivek=new RailwayFrom("Vivek")
+
+
+priyanshu.summit()
+vivek.summit()
+vivek.cancle()
+
+</script>
+</head>
+<body>
+               
+</body>
+</html>
