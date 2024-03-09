@@ -1,7 +1,0 @@
-// Delete
-
-db.courses.deleteOne({id:3})
-
-
-// Delete Database
-db.dropDatabase()
