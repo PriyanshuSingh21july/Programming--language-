@@ -1,2 +1,0 @@
-truncate table student
-/* delete data of table*/

@@ -1,5 +1,0 @@
-
-select customer_id from Customers
-union
-
-select customer_id from Orders

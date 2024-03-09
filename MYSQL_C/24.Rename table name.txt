@@ -1,2 +1,0 @@
-Alter table student
-rename to stu;

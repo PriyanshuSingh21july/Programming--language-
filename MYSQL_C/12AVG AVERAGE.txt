@@ -1,2 +1,0 @@
-select AVG(	amount)
-from Orders;

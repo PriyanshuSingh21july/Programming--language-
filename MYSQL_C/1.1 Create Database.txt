@@ -1,7 +1,0 @@
-create database;
-
-or
-create database if not exists priyanshu ;
-
-
-  

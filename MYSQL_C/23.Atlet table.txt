@@ -1,3 +1,0 @@
-// for add new column in database
-alter table student
-add column rollno int;
